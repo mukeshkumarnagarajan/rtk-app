@@ -1,0 +1,77 @@
+
+
+
+Redux 
+-----
+  * Framework
+  * integratable React, Angular, VueJs, js projects 
+  * close companion to React
+  * React (Library) + Redux (Framework) + React-Redux
+  * redux offers store -- single source of truth
+  * store must be only one in an app 
+
+  1. Classic Redux (35 - 40 steps)
+      * store
+      * Reducer 
+      * Actions 
+      * Dispatcher 
+      * Async Middleware (redux-thunk / redux-saga)
+      * Provider 
+      * mapStateToProps 
+      * immer.js for immutable state updates (immer.js)
+
+  2. Redux-Toolkit (4 - 5 steps)
+      * store 
+      * slice, reducer 
+      * dispatch using useDispatch
+      * subscribe using useSelector 
+
+      2 options to create the rtk project 
+      ------
+        1. with typescript (Recommended)
+            project will have all necessary tools 
+            (redux, react-redux, redux-thunk, immer.js, typescript) properly integrated 
+
+        2. with js (not recommended)
+
+
+App
+---
+  store = {
+    score: {
+      teamScore: 101/2
+      overs: 19.4,
+      wickets: 2,
+      lastWicket: at 18.2 (100/2)
+      bowlersStats: [
+        {}
+      ]
+      ....,
+      ....,
+    },
+    users: {
+
+    },
+    employes: {
+
+    }
+  }
+
+  MiniScorecard 
+    * subscribe to the store and display the data
+
+  TopScorecard 
+    * subscribe to the store and display the data
+
+  LiveScorecard
+    * subscribe to the store and display the data
+
+  FullScorecard 
+    * subscribe to the store and display the data
+
+  SidebarScorecard 
+    * subscribe to the store and display the data
+
+  Users 
+      * subscribe to the store and display the data
+  
